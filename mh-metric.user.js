@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         🐀️ Mousehunt -  Imperial to Metric
+// @name         🐭️ MouseHunt - Metric
 // @version      1.0.0
-// @description  Convert mice weight from imperial to metric.
+// @description  Convert mice weight to metric.
 // @license      MIT
 // @author       bradp
 // @namespace    bradp
