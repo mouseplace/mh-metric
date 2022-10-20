@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         🐭️ MouseHunt - Metric
-// @version      1.0.0
+// @version      1.0.1
 // @description  Convert mice weight to metric.
 // @license      MIT
 // @author       bradp
