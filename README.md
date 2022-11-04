@@ -1,4 +1,4 @@
-# mh-metric
+# 🐭️ MouseHunt - Metric
 
 A Userscript for [MouseHunt](https://mousehuntgame.com) that converts measurements to metric.
 
