@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         🐭️ MouseHunt - Metric
-// @version      1.0.1
+// @version      1.0.2
 // @description  Convert mice weight to metric.
 // @license      MIT
 // @author       bradp
@@ -47,10 +47,13 @@
 
   /**
    * Convert the text in the given element to metric.
-   *
-   * @param {Node} elements Array of elements to convert.
    */
-  const replaceImperialWithMetric = (elements) => {
+  const replaceImperialWithMetric = () => {
+    const elements = document.querySelectorAll('.journal .entry .journalbody .journaltext');
+    if (! elements) {
+      return;
+    }
+
     elements.forEach((element) => {
       // Grab the lb. and oz. values.
       const lb = element.innerText.match(/(\d+? )lb./i);
@@ -91,17 +94,13 @@
     }
   };
 
-  replaceImperialWithMetric(document.querySelectorAll('.journal .entry .journalbody .journaltext'));
+  replaceImperialWithMetric();
   onOverlayChange({
     show: () => {
       // Run immediately, then again in quick succession to make sure the weight is updated.
       replaceMouseOverlay();
-      setTimeout(() => {
-        replaceMouseOverlay();
-      }, 250);
-      setTimeout(() => {
-        replaceMouseOverlay();
-      }, 500);
+      setTimeout(replaceMouseOverlay, 250);
+      setTimeout(replaceMouseOverlay, 500);
     }
   });
 })());
