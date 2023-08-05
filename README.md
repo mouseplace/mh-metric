@@ -1,9 +1,5 @@
 # 🐭️ MouseHunt - Metric
 
-![Greasy Fork](https://img.shields.io/greasyfork/dt/449840)
-![GitHub](https://img.shields.io/github/license/mouseplace/mh-metric)
-![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/mouseplace/mh-metric?label=version)
-
 A Userscript for [MouseHunt](https://mousehuntgame.com) that converts measurements to metric.
 
 ## Installation
