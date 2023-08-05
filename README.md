@@ -1,6 +1,6 @@
 # 🐭️ MouseHunt - Metric
 
-A Userscript for [MouseHunt](https://mousehuntgame.com) that converts measurements to metric.
+A Userscript for [MouseHunt](https://mousehuntgame.com) that displays measurements in metric.
 
 ## Installation
 
