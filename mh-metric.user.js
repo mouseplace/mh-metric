@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         🐭️ MouseHunt - Metric
-// @version      1.0.2
+// @version      1.1.0
 // @description  Convert mice weight to metric.
 // @license      MIT
 // @author       bradp
@@ -9,6 +9,7 @@
 // @icon         https://i.mouse.rip/mouse.png
 // @grant        none
 // @run-at       document-end
+// @require      https://cdn.jsdelivr.net/npm/script-migration@1.1.1
 // ==/UserScript==
 
 ((function () {
@@ -103,4 +104,6 @@
       setTimeout(replaceMouseOverlay, 500);
     }
   });
+
+  migrateUserscript('🐭️ MouseHunt - Metric', 'https://greasyfork.org/en/scripts/449840-mousehunt-metric');
 })());

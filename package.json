@@ -1,6 +1,6 @@
 {
   "name": "mh-metric",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "",
   "main": "mh-metric.user.js",
   "scripts": {
